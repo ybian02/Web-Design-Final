@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<meta name="Yuchun Bian portfolio">
+	<meta name="copyright" content="Copyright © 2016 Yuchun Bian. All Rights Reserved.">
+	<meta name="author" content="Yuchun Bian">
+	<meta name="language" content="English">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400,700" rel="stylesheet">
+
+  	<script src="https://code.jquery.com/jquery-2.1.4.js"></script> 
+  
+ <!--  <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <title>Yuchun Bian</title>
+
+</head>
+
+<body>
+	<a href="../index.html#design" class="close-button">&times;
+	</a>
+
+	<div class="scroll">
+		<a href="#projectstarts" class="fa fa-angle-up" id="arrowBegin"> </a>
+	</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 header">
+			<image class="img-responsive" src="p2-clarity/1.jpg"> 
+			</image>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper" id="projectstarts" style="background-color: #FAFAFA">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-12"> 
+				<blockquote> Using Clarity Design System to build a Sample App that helps people to use Clarity - 
+				</blockquote>
+			<div id="line"> </div>
+			</div>
+
+		</div>
+
+		<div class="row project-info">
+			<div class="col-md-3"> 
+				<h1> Clarity Web Builder </h1>
+				<h4> UI/UX | Research | Web Design </h4>
+				<h4> Medium: Sketch, Invision, Principle.io </h4>
+			</div>
+			<div class="col-md-1"> </div>
+			<div class="col-md-8" id="project-description">
+				<p> In the summer of 2017, I worked as a UI/UX design intern on <a id="inParagraph" href="https://vmware.github.io/clarity/" target="_blank">Project Clarity</a> at VMware. I designed Clarity Web Builder, which creates web pages that follow Clarity design guidelines. In a span of eight weeks, I conducted user research, compiled competitive analysis, went through design iterations, designed and conducted user testing sessions. The project will be one of the first Sample apps for the Clarity Design System. <a id="inParagraph" href="https://docs.google.com/presentation/d/16B9x9bFdBelsFYR7lo6OsTKL_sg7MWrC9ztGdtNlKPM/edit?usp=sharing" target="_blank">Take a look at my presentation</a> or <a id="inParagraph"href="mailto:yuchun.bian@gmail.com" target="_blank"> reach out to me </a> if you are interested in learning more about the project.</p>
+			</div>	
+		</div>
+	</div>
+		
+	<div class="container-fluid">	
+		<div class="row">
+			<div class="col-md-12">
+<!-- 			<image class="img-responsive" src="p2-clarity/0.png"> </image> -->
+<!-- 			<image class="img-responsive" src="p2-clarity/2.jpg"> </image> -->
+			</div>
+		</div>	
+	</div>		
+
+<!-- next project -->
+	<div class="container-fluid" style="background-color: white">
+		<div class="row">
+			<div class="col-md-6 nextProject"> 
+				<a href="MBTA.html"> Next Project: MBTA Information Dispersal System </a>
+			</div>
+			<div class="col-md-6 scroll"> 
+				<a href="#projectstarts" class="fa fa-angle-up" id="arrowUp"></a>
+			</div>
+		</div>
+	</div>
+<!-- end of wrapper -->
+</div>
+
+<script type="text/javascript">
+
+	function scrollNav() {
+  $('.scroll a').click(function(){  
+
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top}, 400);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
+</script>
+
+</body>
+</html>
+
+
