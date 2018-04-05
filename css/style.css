@@ -107,6 +107,7 @@ h1.bigtitle {
 	line-height: 1.2em;
 }
 
+/*move to bottom*/
 
 @media all and (max-width: 1240px){
     h1.bigtitle {
@@ -236,11 +237,6 @@ blockquote {
 	padding-top:50px;
 }
 
-/*
-.headnav{
-	display: inline;
-}*/
-
 .bottom {
 	position: absolute;
 	top: 0;
@@ -324,15 +320,18 @@ ul {
 }
 
 
-#left {
+.padding-small {
 	padding-right: 3%;
 	padding-left: 3%;
+    padding-bottom: 4%;
 }
 
-#right {
+.padding-small-left {
 	padding-left: 3%;
-	padding-right: 3%;
+    padding-bottom: 5%;
 }
+
+
 
 .projectthumb {
 /*	padding-top: 9%;*/
