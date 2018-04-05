@@ -11,13 +11,32 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.04em;
 	text-align: left;
-	padding-top:45px;
+	padding-top:30px;
+    padding-bottom: 18px;
+    padding-left: 6%;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content: space-between;
+    position: fixed;
+    top:0;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    border: none;
+    border-radius: 0;
 }
 
+.nav-space-left {
+    padding-left: 45px;
+}
+
+.padding-left {
+    padding-left: 8%; 
+}
+
+.padding-right{
+    padding-right: 8%; 
+}
 
 a {
 	color:black;
@@ -45,35 +64,68 @@ span {display:none;}
 .hover_img a span { position:absolute; display:none; z-index:0; }
 
 
-.intro{
+h1.intro{
 	font-family: 'PT Serif', serif;
-	padding-top: 14%;
+	padding-top: 25vh;
 	padding-right: 0;
-	padding-left: 0;
+	padding-left: 2vw;
 	color: black;
-	font-size: 4.8em;
+	font-size: 60px;
 	font-weight: 700;
-	line-height: 1.1;
-	height: 100vh;
+	line-height: 1.2em;
+	height: 70vh;
 }
 
-/*@media all and (max-device-width: 720px){
-    .intro {
-        font-size: 100%;
+
+@media all and (max-width: 1240px){
+    h1.intro {
+        font-size: 60px;
     }
 }
 
-@media all and (max-device-width: 640px){
-    .intro {
-        font-size: 80%;
+@media all and (max-width: 640px){
+    h1.intro {
+        font-size: 40px;
     }
 }
 
-@media all and (max-device-width: 320px){
-    .intro {
-        font-size: 60%;
+@media all and (max-width: 320px){
+    h1.intro {
+        font-size: 20px;
     }
-}*/
+}
+
+h1.bigtitle {
+	font-family: 'PT Serif', serif;
+	padding-right: 0;
+	padding-left: 2vw;
+    padding-top: 60px;
+    padding-bottom: 80px;
+	color: black;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+
+@media all and (max-width: 1240px){
+    h1.bigtitle {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 640px){
+    h1.bigtitle {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 320px){
+    hh1.bigtitle {
+        font-size: 15px;
+    }
+}
+
 
 .intro-about{
 	font-family: 'PT Serif', serif;
@@ -97,10 +149,10 @@ h1 {
 
 h2 {
 	font-family: 'PT Serif', serif;
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 30px;
-	padding-top-top: 15px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+/*	padding-top: 5px;*/
 	/*letter-spacing: 0.0009em;*/
 }
 
@@ -108,10 +160,11 @@ h3 {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	color:#646464;
-	opacity: 0.8;
-	line-height: 18px;
-	letter-spacing: 0.01em;
+/*	opacity: 0.8;*/
+	line-height: 1.3em;
+/*	letter-spacing: 0.01em;*/
 	margin-top: 5px;
+    text-align: left;
 }
 
 
