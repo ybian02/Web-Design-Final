@@ -1,3 +1,17 @@
+// smooth scrolling
+function scrollNav() {
+  $('.scroll a').click(function(){  
+
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top}, 400);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
+
+// home page
 var words = ['interaction designer','digital media enthusiast','natural storyteller','rational optimist','social justice nerd'],
     currentStep = 0,
     textEl = document.querySelector('.change-text'),

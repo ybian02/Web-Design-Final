@@ -123,7 +123,7 @@ span {display:none;}
 h1.intro{
 	font-family: 'PT Serif', serif;
 	padding-top: 35vh;
-	padding-bottom: 10vh;
+	padding-bottom: 25vh;
 	padding-right: 0;
 	padding-left: 2vw;
 	color: black;
@@ -133,55 +133,17 @@ h1.intro{
 }
 
 
-@media all and (max-width: 1240px){
-    h1.intro {
-        font-size: 60px;
-    }
-}
-
-@media all and (max-width: 640px){
-    h1.intro {
-        font-size: 40px;
-    }
-}
-
-@media all and (max-width: 320px){
-    h1.intro {
-        font-size: 20px;
-    }
-}
-
 h1.bigtitle {
 	font-family: 'PT Serif', serif;
-	padding-right: 0;
-/*	padding-left: 2vw;*/
-    padding-top: 100px;
-    padding-bottom: 20px;
 	color: black;
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: 400;
-	line-height: 1.2em;
+	line-height: 45px;
+	padding-right: 0;
+    padding-top: 20px;
+	padding-bottom: 15px;
 }
 
-/*move to bottom*/
-
-@media all and (max-width: 1240px){
-    h1.bigtitle {
-        font-size: 40px;
-    }
-}
-
-@media all and (max-width: 640px){
-    h1.bigtitle {
-        font-size: 30px;
-    }
-}
-
-@media all and (max-width: 320px){
-    hh1.bigtitle {
-        font-size: 15px;
-    }
-}
 
 
 .intro-about{
@@ -192,13 +154,13 @@ h1.bigtitle {
 	line-height: 1.2em;
 	padding-right: 4%;
 	padding-left: 4%;
-	padding-top: 30px;
+	padding-top: 20vh;
 }
 
 #grey_bg {
 	background: #F2F2F2;
 	z-index: -1;
-	margin: -105px 0 80px 0;
+	margin: -70px 0 80px 0;
 	padding: 110px 0 88px;
 /*    overflow: hidden;*/
 }
@@ -207,10 +169,8 @@ h1 {
 	font-family: 'PT Serif', serif;
 	font-weight: 700;
 	font-size: 28px;
-	line-height: 13px;
-	/*letter-spacing: 0.0009em;*/
 	margin-top: 0;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	line-height: 30px;
 }
 
@@ -218,15 +178,13 @@ h2 {
 	font-family: 'PT Serif', serif;
 	font-weight: 500;
 	font-size: 20px;
-/*	line-height: 26px;*/
-/*	padding-top: 10px;*/
-	/*letter-spacing: 0.0009em;*/
+	line-height: 25px;
 }
 
 h3 {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
-	color:#646464;
+/*	color:#646464;*/
 	line-height: 1.4em;
 	margin-top: 3px;
     text-align: left;
@@ -272,10 +230,14 @@ h6 {
 /*	text-align: center;*/
 }
 
-p {
+/*p {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.1em;
+}*/
+
+.main_project {
+	padding-bottom: 80px;
 }
 
 .strikethru {
@@ -293,7 +255,7 @@ p {
 	font-weight: 400;
 	font-size: 1.0em;
 	line-height: 1.5em;
-	color: #7f7f7f;
+/*	color: #7f7f7f;*/
 }
 
 blockquote {
@@ -350,9 +312,10 @@ ul {
 
 #line {
 	background-color: black;
-	height: 4px;
+	height: 3px;
 	width: 200px;
 	margin-left: 15px;
+	margin-top: 40px;
 }
 
 
@@ -463,7 +426,7 @@ ul {
 }
 
 .project-info {
-	padding-top: 7%;
+	padding-top: 5%;
 	padding-bottom: 7%;
 }
 
@@ -480,6 +443,58 @@ ul {
 	max-width: 100%; 
 } 
 
+/*gallery lightbox*/
+/* wraps everything in a larger, centered div */
+#contentWrapper {
+	margin:0 auto;
+	width:90vw;
+}
+
+/* styling of all images */
+#contentWrapper image{
+	background-size: cover;
+	background-position: center center;
+	-webkit-transition:opacity .6s ease-in-out;
+	-moz-transition:opacity .6s ease-in-out;
+	-o-transition:opacity .6s ease-in-out;
+	-ms-transition:opacity .6s ease-in-out;
+	transition:opacity .6s ease-in-out;
+}
+
+/* hover state of each image */
+#contentWrapper image:hover {
+	cursor:pointer;
+}
+
+#contentWrapper image {
+	display:inline-block;
+}
+
+#lightbox {
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width:90vw;
+	height:90vh;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#dark {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,.9);
+	width:100vw;
+	height:100vh;
+}
+/*lightbox end*/
+
 .embed-container iframe, 
 .embed-container object, 
 .embed-container embed 
@@ -492,21 +507,19 @@ ul {
 
 .nextProject {
 	font-family: 'PT Serif', serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 25px;
 	line-height: 30px;
-	padding-top: 30px;
+	padding-top: 35px;
 	padding-bottom: 35px;
 	padding-left: 50px;
 }
 
 #arrowUp{
 	position: absolute;
-/*	padding: 0px;*/
 	font-size:45px;
 	right: 50px;
 	line-height: 2;
-/*	text-align: right;*/
 }
 
 /*a #icon {
@@ -528,4 +541,61 @@ a svg:hover {
 
 .space-bottom {
 	padding-bottom: 2%;
+}
+
+/*responsive text*/
+
+@media all and (max-width: 1240px){
+    h1.bigtitle {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 640px){
+    h1.bigtitle {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 320px){
+    h1.bigtitle {
+        font-size: 15px;
+    }
+}
+
+
+@media all and (max-width: 1240px){
+    h1.intro {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 640px){
+    h1.intro {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 320px){
+    h1.intro {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 1240px){
+    .intro-about {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 640px){
+    .intro-about {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .intro-about {
+        font-size: 15px;
+    }
 }
