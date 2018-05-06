@@ -94,6 +94,7 @@ a.link_underline_sm {
 	border-bottom: 2px solid #F6B6B6;
     display: inline-block;
     line-height: 1em;
+    margin-top: 3px;
 }
 
 a.link_underline_sm:visited {
@@ -145,15 +146,14 @@ h1.bigtitle {
 }
 
 
-
 .intro-about{
 	font-family: 'PT Serif', serif;
 	color: black;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.2em;
-	padding-right: 4%;
-	padding-left: 4%;
+/*	padding-right: 4%;*/
+	padding-left: 15vw;
 	padding-top: 20vh;
 }
 
@@ -347,6 +347,11 @@ ul {
 	margin: 0 0 0 0;
 }
 
+.col-md-5{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
 
 .col-md-2{
 	padding: 0 0 0 0;
@@ -495,13 +500,13 @@ ul {
 }
 .lightbox-content {
     position: relative;
-    width: 60%;
-    height: 80%;
-    margin: 3% auto 6% auto;
+    width: 600px;
+    height: 600px;
+    margin: 3% auto 3% auto;
 }
 .lightbox-content img {
-    width: 80%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
  	margin: auto auto;
     z-index: 100;
@@ -610,19 +615,24 @@ a svg:hover {
 
 @media all and (max-width: 1240px){
     h1.bigtitle {
-        font-size: 40px;
+        font-size: 38px;
+        line-height: 45px;
     }
 }
 
 @media all and (max-width: 640px){
     h1.bigtitle {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 35px;
+        padding-top: 15px;
     }
 }
 
 @media all and (max-width: 320px){
     h1.bigtitle {
         font-size: 15px;
+        line-height: 20px;
+        padding-top: 10px;
     }
 }
 
